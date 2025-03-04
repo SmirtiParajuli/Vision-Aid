@@ -19,6 +19,7 @@ Vision Aid is an AI-powered assistive technology designed to help visually impai
         - The dataset has been pre-processed using Roboflow, including resizing, noise augmentation, and dataset structuring.
 
 # ** System Requirements **
+
   Hardware
     
         - Processor: Intel i5/i7 or equivalent AMD processor.
@@ -31,8 +32,10 @@ Vision Aid is an AI-powered assistive technology designed to help visually impai
         - Operating System: Windows 10/11, Linux, or macOS.
         - Python Version: 3.10.11
         - CUDA Version: 12.5 (if using GPU acceleration)
+        
 
 # ** Installation & Setup **
+
    Step 1: Clone the Repository
      
         git clone https://github.com/yourusername/VisionAid.git
@@ -49,6 +52,7 @@ Vision Aid is an AI-powered assistive technology designed to help visually impai
     pip install -r requirements.txt
 
    Step 4: Download and Set Up the Dataset  
+   
      - Download the 26 Class Object Detection Dataset from Kaggle.
      - Extract and place it in the data/ directory inside the project folder.
      - Ensure the dataset follows the YOLO format with train, val, and test folders.
@@ -64,12 +68,14 @@ Vision Aid is an AI-powered assistive technology designed to help visually impai
      - Run visionAidGUI.py to start the object detection system.
      - Enable voice control
      - Say commands like "Start detection" or "Stop detection" to interact hands-free.
+     
     GUI Interaction
      - Access settings through the high-contrast GUI to customize detection sensitivity and object preferences.
     Real-Time Feedback
     - Detected objects will be announced with proximity alerts to aid navigation.
 
 # ** Model Training & Fine-Tuning **
+
   To retrain the YOLOv8 model on a custom dataset:
   
        python train.py --data data.yaml --epochs 50 --batch-size 16 --img 640
@@ -90,16 +96,19 @@ Vision Aid is an AI-powered assistive technology designed to help visually impai
           - Use a higher-end GPU or reduce the input image size in the config.py file.
 
 # ** Future Enhancements ** 
+
     - Mobile Application Version: Develop a smartphone-compatible version.
     - Improved Dataset: Expand dataset diversity and balance class distributions.
     - Multi-Sensor Integration: Incorporate LiDAR or thermal imaging for low-light detection.
     - Enhanced Voice Command Set: Introduce additional commands for improved user experience.
 
 # ** Contributors **
+
     - Smriti Parajuli  - Object Detection & Model Training
     - Gloria Hawkins-Roberts  - GUI & Voice Control Development
     
 # ** References **
+
   For detailed references and literature review, please check the full PBT205-Final Prototype Report included in this repository.
   
 
